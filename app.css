@@ -11,12 +11,17 @@ body {
   /* height: 100vh; */
 }
 
+.navbar {
+  background: transparent;
+}
+
 nav .d-flex {
   padding: 0;
 }
 
 .nav-item {
   margin: 0 75px;
+  text-align: left;
 }
 
 a {
@@ -30,15 +35,12 @@ div .nav-item::after {
   height: 5px;
   width: 0;
   left: 0;
-  bottom: -10px;
+  bottom: 5px;
   transition: 0.3s;
 }
 
 div .nav-item:hover::after {
   width: 100%;
-}
-
-.row {
 }
 
 .header {
@@ -61,22 +63,59 @@ hr {
   padding-bottom: 15px;
 }
 
+.jumbotro {
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.images {
+  background-image: url(./forest-931706_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.images2 {
+  background-image: url(./forest-1208296_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(203, 237, 181, 0.7);
+}
+
+.history {
+  text-align: left;
+}
+
+/* .right {
+  padding: 0 125px;
+} */
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1024px) {
+  .right {
+    padding: 0 15px;
+    padding-top: 50px;
+  }
+
   .nav-item {
     margin: 0px;
   }
 }
 
-.jumbotron {
-  width: calc(100% - 40px);
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding: 100px; */
+.arbre {
+  margin: 0 auto;
 }
-
-/* section {
-  background-image: url(./arbres-wallpaper-preview.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
