@@ -74,14 +74,14 @@ hr {
 }
 
 .images {
-  background-image: url(./forest-931706_1920.jpg);
+  background-image: url(./images/forest-931706_1920.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
 .images2 {
-  background-image: url(./forest-1208296_1920.jpg);
+  background-image: url(./images/forest-1208296_1920.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -105,6 +105,101 @@ hr {
   text-align: center;
 }
 
+.arbre {
+  margin: 0 auto;
+}
+
+.play-btn {
+  background: greenyellow;
+  color: #fff;
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.fa-play {
+  line-height: 100px;
+  margin-left: 10px;
+}
+
+.play-btn::before,
+.play-btn::after {
+  content: "";
+  position: absolute;
+  border: 2px solid greenyellow;
+  border-radius: 50%;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  animation: animate 1s linear infinite;
+  opacity: 0;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.text-btn-play {
+  padding-top: 350px;
+}
+
+.service {
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.border-bottom1 {
+  border-bottom: 1px solid lightgray;
+}
+
+.border-right1 {
+  border-right: 1px solid lightgray;
+}
+
+.skills {
+  padding-bottom: 100px;
+}
+
+.service:hover {
+  background: #f8f9fa;
+}
+
+.service i {
+  color: greenyellow;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.service h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.service p {
+  color: gray;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 1024px) {
   .right {
     padding: 0 15px;
@@ -116,6 +211,12 @@ hr {
   }
 }
 
-.arbre {
-  margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .border-bottom1 {
+    border: none;
+  }
+
+  .border-right1 {
+    border: none;
+  }
 }
