@@ -94,6 +94,13 @@ hr {
   position: relative;
 }
 
+.images4 {
+  background-image: url(./images/forest-1031022_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .overlay {
   background: rgba(203, 237, 181, 0.7);
 }
@@ -257,6 +264,7 @@ hr {
 
 .portrait:hover {
   transform: scale(1.1);
+  background-color: greenyellow;
 }
 
 .join-us {
@@ -294,6 +302,24 @@ a:link {
   transform: scale(1.1);
 }
 
+.background-card {
+  background-color: lightgray;
+  margin: 0 15px;
+}
+
+.card-spacing {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .background-card {
+  background-color: greenyellow;
+}
+
 @media screen and (max-width: 768px) {
   .border-bottom1 {
     border: none;
@@ -301,5 +327,13 @@ a:link {
 
   .border-right1 {
     border: none;
+  }
+
+  .portrait:hover {
+    transform: none;
+  }
+
+  .card:hover {
+    transform: none;
   }
 }
