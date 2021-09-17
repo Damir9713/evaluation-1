@@ -11,6 +11,8 @@ body {
   /* height: 100vh; */
 }
 
+/* HEADER SECTION */
+
 .navbar {
   background: transparent;
 }
@@ -63,7 +65,7 @@ hr {
   padding-bottom: 15px;
 }
 
-.jumbotro {
+/* .jumbotro {
   width: calc(100% - 40px);
   max-width: 1000px;
   margin-left: auto;
@@ -71,7 +73,9 @@ hr {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
-}
+} */
+
+/* Background of section with overlays */
 
 .images {
   background-image: url(./images/forest-931706_1920.jpg);
@@ -104,6 +108,8 @@ hr {
 .overlay {
   background: rgba(203, 237, 181, 0.7);
 }
+
+/* HISTORY SECTION */
 
 .history {
   text-align: left;
@@ -174,6 +180,8 @@ hr {
   padding-top: 350px;
 }
 
+/* SERVICE SECTION */
+
 .service {
   padding: 20px;
   box-sizing: border-box;
@@ -214,32 +222,7 @@ hr {
   font-weight: 500;
 }
 
-@media screen and (max-width: 1024px) {
-  .right {
-    padding: 0 15px;
-    padding-top: 50px;
-  }
-
-  .nav-item {
-    margin: 0px;
-  }
-
-  .project {
-    font-size: 15px;
-  }
-
-  /* .top-content {
-    font-size: 15px;
-  }
-
-  .top-content h3 {
-    font-size: 15px;
-  }
-
-  .photo-gallery {
-    text-align: center;
-  } */
-}
+/* TEAM SECTION */
 
 .portrait {
   background: white;
@@ -278,6 +261,8 @@ hr {
 .portrait h3 {
   padding-top: 10px;
 }
+
+/* EVENTS SECTION */
 
 .our-works {
   text-align: start;
@@ -321,23 +306,7 @@ a:link {
   background-color: greenyellow;
 }
 
-@media screen and (max-width: 768px) {
-  .border-bottom1 {
-    border: none;
-  }
-
-  .border-right1 {
-    border: none;
-  }
-
-  .portrait:hover {
-    transform: none;
-  }
-
-  .card:hover {
-    transform: none;
-  }
-}
+/* FOOTER SECTION */
 
 .col a {
   color: black;
@@ -377,4 +346,51 @@ a:link {
 
 .copyright {
   padding-top: 20px;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+  .right {
+    padding: 0 15px;
+    padding-top: 50px;
+  }
+
+  .nav-item {
+    margin: 0px;
+  }
+
+  .project {
+    font-size: 15px;
+  }
+
+  /* .top-content {
+    font-size: 15px;
+  }
+
+  .top-content h3 {
+    font-size: 15px;
+  }
+
+  .photo-gallery {
+    text-align: center;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .border-bottom1 {
+    border: none;
+  }
+
+  .border-right1 {
+    border: none;
+  }
+
+  .portrait:hover {
+    transform: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
 }
